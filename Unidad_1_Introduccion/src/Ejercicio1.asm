@@ -3,7 +3,7 @@
 
 .data
     ; --- Espacio para el Cambio 1 ---
-    ; Declara aquí tu variable 'edad'
+   edad db 20
 
 .code
 main proc
@@ -12,7 +12,8 @@ main proc
     mov ds, ax
 
     ; --- Espacio para el Cambio 2 ---
-    ; Realiza aquí los movimientos a BL (Directo) y BH (Inmediato)
+    mov bl, edad
+    mov bh, 30
 
     ; Finalización del programa
     mov ax, 4c00h
